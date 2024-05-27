@@ -1,1 +1,78 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edu Gambín's personal page</title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>Edu Gambín's personal page</h1>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>I am a mathematician and a computer science engineer. I love science, low-level programming, and making videogames in my free time!</p>
+      </section>
+      <section id="experience">
+        <h2>Experience</h2>
+        <h3>C++ Software Developer</h3>
+        <p>
+          Since September 2023, I have been working in AMADEUS (as a contractor
+          for ALTEN TECHNOLOGIES). Our mission is to increase the reveneue for
+          several airlines by adapting the value of air tickets dynamically,
+          based on a prediciton of an internal mathematical model.
+        </p>
+        <h3>DevOps/QA Engineer</h3>
+        <p>
+          In 2020-2022 I worked in Orenes Grupo S.L. as a DevOps/QA Engineer. I
+          developed tools for automatic testing, and after integrated them in
+          the already existing pipeline.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>To be updated soon!</p>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <h3>Social</h3>
+        <ul>
+          <li>Spoken languages: Spanish and English (fluent), French (1yr abroad)</li>
+          <li>Management: Second SCRUM Master for a year</li>
+          <li>Passion for Mathematics, Physics and low-level programming</li>
+        </ul>
+        <h3>Technical</h3>
+        <ul>
+          <li>Problem solving: abstract thinking, pattern identification, mathematical modeling, ...</li>
+          <li>Low-level programming: C/C++, Rust, Assembly</li>
+          <li>Other languages: Java, Python, Matlab</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </div>
+    <footer>
+      <p>&copy; 2024 Eduardo Gambín Monserrat. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
