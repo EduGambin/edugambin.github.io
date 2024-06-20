@@ -2,77 +2,63 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Edu Gambín's personal page</title>
-    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduardo Gambín Monserrat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
   </head>
   <body>
     <header>
-      <h1>Edu Gambín's personal page</h1>
-      <nav>
-        <a href="#about">About Me</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">Eduardo Gambín Monserrat</a>
+        </div>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="projects.html">Projects</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">CV</a>
+        </nav>
+      </div>
     </header>
-    <div class="container">
-      <section id="about">
-        <h2>About Me</h2>
-        <p>I am a mathematician and a computer science engineer. I love science, low-level programming, and making videogames in my free time!</p>
-      </section>
-      <section id="experience">
-        <h2>Experience</h2>
-        <h3>C++ Software Developer</h3>
+    <main>
+
+      <section class="intro">
         <p>
-          Since September 2023, I have been working in AMADEUS (as a contractor
-          for ALTEN TECHNOLOGIES). Our mission is to increase the reveneue for
-          several airlines by adapting the value of air tickets dynamically,
-          based on a prediciton of an internal mathematical model.
-        </p>
-        <h3>DevOps/QA Engineer</h3>
-        <p>
-          In 2020-2022 I worked in Orenes Grupo S.L. as a DevOps/QA Engineer. I
-          developed tools for automatic testing, and after integrated them in
-          the already existing pipeline.
+          Hi, thanks a lot for reaching to my page! If you are here, you may already know a thing or two about me, but let me introduce myself properly.
         </p>
       </section>
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>To be updated soon!</p>
+
+      <section class="about-me">
+        <h1>Something about me</h1>
+        <img class="portrait" src="assets/portrait.jpg" alt="Me IRL">
+        My name is Eduardo Gambín Monserrat, though I prefer to be called just Edu since it's shorter. I am from Murcia, a city in the southeast of Spain, but these days I live in France, in a small city called Antibes, next to Nice.
+        <br><br>
+        I am both a mathematician and a computer science engineer. I did a special program at my university that allowed me to earn both degrees simultaneously.
+        <br><br>
+        It feels awkward to describe myself, but I think I am a friendly and warm person above all else. It might be because of where I am from. I tend to get along very quickly with people, which I think is a wonderful trait that I would not like to change. I also consider myself somewhat funny, often trying to crack jokes to make people laugh and feel in a good mood.
+        <br><br>
+        I don't think I can fit all my hobbies and passions here, but if you are interested, you can read about some of them on <a href="about.html">the About section</a>, among many other things. I will do my best to keep it updated and interesting.
       </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <h3>Social</h3>
-        <ul>
-          <li>Spoken languages: Spanish and English (fluent), French (1yr abroad)</li>
-          <li>Management: Second SCRUM Master for a year</li>
-          <li>Passion for Mathematics, Physics and low-level programming</li>
-        </ul>
-        <h3>Technical</h3>
-        <ul>
-          <li>Problem solving: abstract thinking, pattern identification, mathematical modeling, ...</li>
-          <li>Low-level programming: C/C++, Rust, Assembly</li>
-          <li>Other languages: Java, Python, Matlab</li>
-        </ul>
+
+      <section class="skills">
+        <h1>What I'm good at</h1>
+        This page provides a more general view of myself, for specifics you can check <a href="projects.html">the CV section</a>.
+        <br><br>
+        I have recently decided to aim for a PhD in Artificial Intelligence, though I am still searching for a master's degree that catches my attention. There's an itch that never leaves once you delve into the mathematics of science.
+        <br><br>
+        These days, I work as a C++ software developer, and I think I am good at it! Since I was very little, I have always liked tinkering with computers and machines in general. I have a genuine curiosity about how things work, regardless of the field.
+        <br><br>
+        I am also good at math, of course. I don't think I have a favorite subject or area, but if I had to choose one, it would be Fourier Analysis. My thesis was on this topic, and it captivated me quite a bit. It is a really interesting read, at least the introduction, which you can check out in <a href="projects.html">the Projects section</a>.
+        <br><br>
+        Lastly, I love physics, especially quantum physics. At some point in the future, I would like to learn more in an educational way, perhaps by pursuing a third degree.
       </section>
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form>
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <button type="submit">Send</button>
-        </form>
-      </section>
-    </div>
+
+    </main>
     <footer>
-      <p>&copy; 2024 Eduardo Gambín Monserrat. All rights reserved.</p>
+      <a href="mailto:gambinmonserrat@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      <a href="https://www.linkedin.com/in/edu-gambin"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/EduGambin"><i class="fa-brands fa-github"></i></a>
     </footer>
   </body>
 </html>
