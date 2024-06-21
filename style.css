@@ -45,7 +45,6 @@ main {
   text-align: justify;
 }
 img {
-  float: right;
   user-drag: none;
   user-select: none;
   -moz-user-select: none;
@@ -58,6 +57,7 @@ img {
   max-width: 40%;
   margin-left: 2em;
   margin-down: 2em;
+  float: right;
 }
 main a {
   color: #0D324D;
@@ -73,4 +73,22 @@ footer a {
 }
 footer a:hover {
   color: #020202;
+}
+
+.project-entry {
+  height: 175px;
+  background-color: white;
+  display: flex;
+  margin: 0px 50px;
+}
+
+.project-description {
+  margin: auto 20px;
+  margin-left: 10px;
+}
+
+.project-logo {
+  margin: 20px;
+  margin-right: 10px;
+  /* TODO: Me falta poner que se mantenga la foto cuadrada */
 }
