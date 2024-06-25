@@ -8,19 +8,24 @@ body {
   padding: 30px;
 }
 
+h1,
+h2 {
+  text-align: left;
+}
+
 header,
 footer {
   display: flex;
-  justify-content: space-around;
   font-size: larger;
+  justify-content: space-around;
 }
 
 header {
-  margin-bottom: 30px;
+  margin-bottom: 2em;
 }
 
 footer {
-  margin-top: 30px;
+  margin-top: 5em;
 }
 
 header a,
@@ -54,8 +59,27 @@ figure.right {
   max-width: 300px;
 }
 
+@media (width <= 400px) {
+  figure.right {
+    max-width: 100%;
+    margin: 0 0 1em 0;
+  }
+
+  .nav-text {
+    font-size: small;
+  }
+
+  h1 {
+    font-size: x-large;
+  }
+  h2 {
+    font-size: large;
+  }
+}
+
 figure.inline {
   max-width: 100%;
+  margin: 1em 0;
 }
 
 dt {
