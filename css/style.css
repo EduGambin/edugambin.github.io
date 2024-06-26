@@ -1,85 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 body {
+  margin: 0;
+  padding: 0 5vw;
   font-family: "Open Sans", sans-serif;
-  max-width: 720px;
-  margin: 0 auto;
-  text-align: justify;
-  padding: 30px;
-}
-
-h1,
-h2 {
-  text-align: left;
-}
-
-header,
-footer {
-  display: flex;
-  font-size: larger;
-  justify-content: space-around;
 }
 
 header {
-  margin-bottom: 2em;
+  position: fixed; /* Header should not move with the page */
+  top: 0; /* Header to the top of the screen */
+  left: 0; /* Header to the left of the screen */
+  width: 100%; /* Header all across the screen */
+  z-index: 1000; /* Header stays on top of other content */
+
+  /* ^^^ This is the bare minimum to make it work ^^^ */
+
+  padding: 1em 0;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-  margin-top: 5em;
+  width: 100%; /* Header all across the screen */
+  padding: 1em 0;
+  margin-bottom: 1em;
 }
 
-header a,
-footer a {
+nav {
+  margin: 0 auto;
+  padding: 0 5vw;
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 720px;
+}
+
+main {
+  margin: 6em auto;
+  text-align: justify;
+  max-width: 720px;
+}
+
+.navlink {
   color: #333;
+  text-align: center;
   text-decoration: none;
   transition: color 0.3s;
+  user-select: none;
 }
 
-header a:hover,
-footer a:hover {
+.navlink.active {
   color: #007bff;
 }
 
+.navlink.active {
+  color: #007bff;
+}
+
+.navlink:hover {
+  color: #007bff;
+}
+
+.navlink i {
+  font-size: x-large;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.navlink span {
+  display: block;
+  font-size: small;
+}
+
 figure {
+  margin: 0;
   text-align: center;
+}
+
+.float-right {
+  max-width: 40%;
+  float: right;
+  margin-left: 5vw;
+}
+
+.float-inline {
+  max-width: 80%;
+  margin: 2em auto;
 }
 
 img {
   width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
 }
 
 figcaption {
   font-size: smaller;
   font-style: italic;
-}
-
-figure.right {
-  float: right;
-  margin: 0 0 1em 2em;
-  max-width: 300px;
-}
-
-@media (width <= 400px) {
-  figure.right {
-    max-width: 100%;
-    margin: 0 0 1em 0;
-  }
-
-  .nav-text {
-    font-size: small;
-  }
-
-  h1 {
-    font-size: x-large;
-  }
-  h2 {
-    font-size: large;
-  }
-}
-
-figure.inline {
-  max-width: 100%;
-  margin: 1em 0;
 }
 
 dt {
