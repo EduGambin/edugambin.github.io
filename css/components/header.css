@@ -2,7 +2,8 @@
 @import url("social.css");
 
 header {
-  height: 10vh;
+  min-height: 90px;
+  height: 6em;
   display: flex;
   align-items: center; /* Centers vertically */
   justify-content: space-between;

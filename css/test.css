@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  width: 80vw;
+  width: 75vw;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -15,10 +15,27 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centers vertically */
+  flex-direction: row;
   flex-grow: 1; /* Allow to take up the remaining space in viewport */
   gap: 2vw;
 }
 
+h1 {
+  max-width: 38rem;
+}
+
 p {
-  width: 38rem;
+  max-width: 38rem;
+  line-height: 1.5;
+}
+
+@media (orientation: portrait) {
+  main {
+    flex-direction: column;
+    flex-grow: 0;
+  }
+
+  .picture {
+    max-width: 50vw;
+  }
 }

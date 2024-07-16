@@ -1,8 +1,8 @@
 @import url("animation.css");
 
 .picture {
-  border-radius: 20px;
-  width: 600px;
+  border-radius: 2vw;
+  max-width: 30vw;
   height: auto; /* Maintain aspect ratio */
 
   opacity: 0; /* Initial opacity set to 0 */

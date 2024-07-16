@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   currentPage = window.location.pathname.split("/").pop();
 
-  if (currentPage === "test.html") {
+  if (currentPage === "") {
     currentPage = "index.html";
   }
 
