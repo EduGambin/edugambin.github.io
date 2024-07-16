@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
 
 body {
   margin: 0;
   padding: 0 5vw;
   font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
 }
 
 header {
@@ -35,9 +43,9 @@ nav {
 }
 
 main {
-  margin: 6em auto;
+  margin: 7em auto;
   text-align: justify;
-  max-width: 720px;
+  max-width: 900px;
 }
 
 .navlink {
@@ -77,9 +85,9 @@ figure {
 }
 
 .float-right {
-  max-width: 40%;
+  max-width: 50%;
   float: right;
-  margin-left: 5vw;
+  margin-left: 3vw;
 }
 
 .float-inline {
@@ -93,7 +101,7 @@ img {
 }
 
 figcaption {
-  font-size: smaller;
+  color: gray;
   font-style: italic;
 }
 

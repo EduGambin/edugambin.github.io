@@ -1,0 +1,9 @@
+@import url("nav.css");
+@import url("social.css");
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center; /* Centers vertically */
+  justify-content: space-between;
+}

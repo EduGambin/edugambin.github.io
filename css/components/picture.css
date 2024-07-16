@@ -1,0 +1,13 @@
+@import url("animation.css");
+
+.picture {
+  border-radius: 20px;
+  width: 600px;
+  height: auto; /* Maintain aspect ratio */
+
+  opacity: 0; /* Initial opacity set to 0 */
+  transform: translateY(10px); /* Initial opacity set to 0 */
+  animation:
+    fadeIn 500ms ease-out 1s forwards,
+    moveIn 500ms ease 1s forwards;
+}

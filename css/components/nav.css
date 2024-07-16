@@ -1,0 +1,23 @@
+@import url("../colors.css");
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5em;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: black;
+    transition: color 200ms;
+  }
+
+  a:hover {
+    color: var(--accent);
+  }
+}
+
+.active {
+  text-decoration: underline var(--primary) 0.25em;
+}
