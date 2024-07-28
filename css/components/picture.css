@@ -1,8 +1,26 @@
-@import url("animation.css");
+/* Define the keyframes for the fade-in animation */
+@keyframes moveIn {
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Define the keyframes for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 .picture {
   border-radius: 2vw;
-  max-width: 30vw;
+  width: 33vw;
   height: auto; /* Maintain aspect ratio */
 
   opacity: 0; /* Initial opacity set to 0 */

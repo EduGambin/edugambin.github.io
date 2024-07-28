@@ -2,22 +2,44 @@
 
 nav {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5em;
+  gap: 3vw;
 
   a {
+    color: black;
     text-decoration: none;
     font-weight: 700;
-    color: black;
+
     transition: color 200ms;
+
+    .fa {
+      display: none;
+    }
+
+    span {
+      display: initial;
+    }
   }
 
   a:hover {
-    color: var(--accent);
+    color: var(--primary-50);
+  }
+}
+
+@media (orientation: portrait) {
+  nav {
+    gap: 6vw;
+
+    a {
+      .fa {
+        display: initial;
+      }
+      span {
+        display: none;
+      }
+    }
   }
 }
 
 .active {
-  text-decoration: underline var(--primary) 0.25em;
+  color: var(--primary);
 }

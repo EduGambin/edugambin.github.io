@@ -1,10 +1,25 @@
+@import url("../global.css");
+@import url("../colors.css");
 @import url("nav.css");
-@import url("social.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 header {
-  min-height: 90px;
-  height: 6em;
+  position: fixed; /* Header should not move with the page */
+  top: 0; /* Header to the top of the screen */
+  left: 0; /* Header to the left of the screen */
+  width: 100%; /* Header all across the screen */
+  z-index: 1000; /* Header stays on top of other content */
+
+  padding: 1.5em;
   display: flex;
   align-items: center; /* Centers vertically */
   justify-content: space-between;
+  background-color: var(--background);
+  box-shadow: none;
+  transition: box-shadow 0.3s ease-in-out;
 }

@@ -7,37 +7,52 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/components/picture.css" />
     <link rel="stylesheet" href="css/components/header.css" />
-    <link rel="stylesheet" href="css/test.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
-    <script src="js/script.js" defer></script>
+    <script src="js/header.js" defer></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
-        <a class="navlink" href="index.html">HOME</a>
-        <a class="navlink" href="about.html">ABOUT</a>
-        <a class="navlink" href="projects.html">PROJECTS</a>
-        <a class="navlink" href="blog.html">BLOG</a>
+        <a class="active" href="index.html">
+          <div class="fa">
+            <i class="fa fa-solid fa-house-chimney fa-xl"></i>
+          </div>
+          <span>HOME</span>
+        </a>
+        <a href="about.html">
+          <div class="fa"><i class="fa fa-solid fa-user fa-xl"></i></div>
+          <span>ABOUT</span>
+        </a>
+        <a href="projects.html">
+          <div class="fa"><i class="fa-solid fa-list-check fa-xl"></i></div>
+          <span>PROJECTS</span>
+        </a>
+        <a href="#">
+          <div class="fa"><i class="fa fa-solid fa-blog fa-xl"></i></div>
+          <span>BLOG</span>
+        </a>
       </nav>
-      <div class="social">
-        <a href="https://www.linkedin.com/in/edu-gambin">
-          <i class="fa-brands fa-linkedin"></i>
+      <nav>
+        <a class="link" href="linkedin.com/in/edu-gambin">
+          <i class="fa-brands fa-linkedin fa-xl"></i>
         </a>
-        <a href="https://github.com/EduGambin">
-          <i class="fa-brands fa-github"></i>
+        <a class="link" href="github.com/EduGambin">
+          <i class="fa-brands fa-github fa-xl"></i>
         </a>
-        <a href="mailto:gambinmonserrat@gmail.com">
-          <i class="fa-solid fa-envelope"></i>
+        <a class="link" href="mailto:gambinmonserrat@gmail.com">
+          <i class="fa-solid fa-envelope fa-xl"></i>
         </a>
-      </div>
+      </nav>
     </header>
     <main>
       <div>
-        <h1>Greatness from small beginnings</h1>
+        <h1 style="text-align: left">The beginning of something incredible</h1>
         <p>
-          Hi, I'm Edu! I am a Mathematician and a Computer Science Engineer. I
-          am looking for a PHD in Data Science or Cloud Computing. Let's get in
-          touch!
+          ¡Hola! My name is <b>Eduardo</b>, or <b>Edu</b> for short. I am a C++
+          Software Engineer with a BSc in <em>Mathematics</em> and another BSc
+          in <em>Computer Engineering</em>. Currently, I am searching for a
+          <b>Master's Degree in Data Science</b>. Let's get in touch!
         </p>
       </div>
       <div>

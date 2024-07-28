@@ -18,30 +18,37 @@
 
 p {
   font-size: var(--p);
+  line-height: 1.5;
 }
 
 h1 {
   font-size: var(--h1);
   font-family: "Noto Serif", serif;
   font-weight: 550;
+  margin-top: 0;
+  text-align: center;
 }
 
 h2 {
   font-size: var(--h2);
   font-family: "Noto Serif", serif;
   font-weight: 550;
+  margin-top: 0;
+  text-align: center;
 }
 
 h3 {
   font-size: var(--h3);
   font-family: "Noto Serif", serif;
   font-weight: 550;
+  margin-top: 0;
 }
 
 h4 {
   font-size: var(--h4);
   font-family: "Noto Serif", serif;
   font-weight: 550;
+  margin-top: 0;
 }
 
 small {

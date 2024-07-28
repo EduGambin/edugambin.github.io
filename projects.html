@@ -3,86 +3,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projects | Eduardo Gambín Monserrat</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>About | Eduardo Gambín Monserrat</title>
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/components/picture.css" />
+    <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/projects.css" />
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <script src="js/script.js" defer></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav>
-        <a href="index.html" class="navlink">
-          <i class="fa-solid fa-house-chimney"></i>
-          <span>Home</span>
+        <a href="index.html">
+          <div class="fa">
+            <i class="fa fa-solid fa-house-chimney fa-xl"></i>
+          </div>
+          <span>HOME</span>
         </a>
-        <a href="projects.html" class="navlink">
-          <i class="fa-solid fa-list-check"></i>
-          <span>Projects</span>
+        <a href="about.html">
+          <div class="fa"><i class="fa fa-solid fa-user fa-xl"></i></div>
+          <span>ABOUT</span>
         </a>
-        <a href="about.html" class="navlink">
-          <i class="fa-solid fa-user"></i>
-          <span>About</span>
+        <a class="active" href="projects.html">
+          <div class="fa"><i class="fa-solid fa-list-check fa-xl"></i></div>
+          <span>PROJECTS</span>
         </a>
-        <a href="#" class="navlink">
-          <i class="fa-solid fa-blog"></i>
-          <span>Blog</span>
+        <a href="#">
+          <div class="fa"><i class="fa fa-solid fa-blog fa-xl"></i></div>
+          <span>BLOG</span>
+        </a>
+      </nav>
+      <nav>
+        <a class="link" href="linkedin.com/in/edu-gambin">
+          <i class="fa-brands fa-linkedin fa-xl"></i>
+        </a>
+        <a class="link" href="github.com/EduGambin">
+          <i class="fa-brands fa-github fa-xl"></i>
+        </a>
+        <a class="link" href="mailto:gambinmonserrat@gmail.com">
+          <i class="fa-solid fa-envelope fa-xl"></i>
         </a>
       </nav>
     </header>
     <main>
       <h1>List of projects</h1>
       <h2>Research</h2>
-      <dl>
-        <dt>BSc thesis: Fourier and Radon transform, and applications</dt>
-        <dd>
-          The Fourier transform is widely used in lots of areas, such as in
-          communications, signal recognition. This is very important for a
-          reason we will see later on, and that will be clear when the moment
-          arises
-        </dd>
+      <div class="layout-column-two">
+        <div class="column">
+          <h3>BSc thesis: Fourier and Radon transform, and applications</h3>
+          <p>
+            The Fourier transform is widely used in lots of areas, such as in
+            communications, signal recognition. This is very important for a
+            reason we will see later on, and that will be clear when the moment
+            arises
+          </p>
+        </div>
+        <div class="column">
+          <h3>BSc thesis: Design and development of lots of stuff</h3>
+          <p>
+            The Fourier transform is widely used in lots of areas, such as in
+            communications, signal recognition. This is very important for a
+            reason we will see later on, and that will be clear when the moment
+            arises
+          </p>
+        </div>
+      </div>
 
-        <dt>BSc thesis: Design and development of lots of stuff</dt>
-        <dd>
-          The Fourier transform is widely used in lots of areas, such as in
-          communications, signal recognition. This is very important for a
-          reason we will see later on, and that will be clear when the moment
-          arises
-        </dd>
-      </dl>
       <h2>Education</h2>
-      <dl>
-        <dt>Notes for the Mathematics BSc</dt>
-        <dd>
-          The Fourier transform is widely used in lots of areas, such as in
-          communications, signal recognition. This is very important for a
-          reason we will see later on, and that will be clear when the moment
-          arises
-        </dd>
+      <div class="layout-column-two">
+        <div class="column">
+          <h3>Notes for the Mathematics BSc</h3>
+          <p>
+            The Fourier transform is widely used in lots of areas, such as in
+            communications, signal recognition. This is very important for a
+            reason we will see later on, and that will be clear when the moment
+            arises
+          </p>
+        </div>
 
-        <dt>Notes for the Computer Science Engineering BSc</dt>
-        <dd>
-          The Fourier transform is widely used in lots of areas, such as in
-          communications, signal recognition. This is very important for a
-          reason we will see later on, and that will be clear when the moment
-          arises
-        </dd>
-      </dl>
-      <footer>
-        <nav>
-          <a href="mailto:gambinmonserrat@gmail.com" class="navlink">
-            <i class="fa-solid fa-envelope"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/edu-gambin" class="navlink">
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a href="https://github.com/EduGambin" class="navlink">
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="#" class="navlink">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </nav>
-      </footer>
+        <div class="column">
+          <h3>Notes for the Computer Science Engineering BSc</h3>
+          <p>
+            The Fourier transform is widely used in lots of areas, such as in
+            communications, signal recognition. This is very important for a
+            reason we will see later on, and that will be clear when the moment
+            arises
+          </p>
+        </div>
+      </div>
     </main>
   </body>
 </html>

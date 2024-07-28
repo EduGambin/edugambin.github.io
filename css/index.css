@@ -5,7 +5,8 @@ body {
 }
 
 body {
-  width: 75vw;
+  width: 92vw;
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -20,10 +21,6 @@ main {
   gap: 2vw;
 }
 
-h1 {
-  max-width: 38rem;
-}
-
 p {
   max-width: 38rem;
   line-height: 1.5;
@@ -33,9 +30,15 @@ p {
   main {
     flex-direction: column;
     flex-grow: 0;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 auto;
+    padding-bottom: 2vh;
   }
 
   .picture {
-    max-width: 50vw;
+    width: 45vh;
   }
 }
