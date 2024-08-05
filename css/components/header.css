@@ -15,10 +15,10 @@ header {
   width: 100%; /* Header all across the screen */
   z-index: 1000; /* Header stays on top of other content */
 
-  padding: 1.5em;
+  padding: 1.5rem;
   display: flex;
   align-items: center; /* Centers vertically */
-  justify-content: space-between;
+  justify-content: center;
   background-color: var(--background);
   box-shadow: none;
   transition: box-shadow 0.3s ease-in-out;

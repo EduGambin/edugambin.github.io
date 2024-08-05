@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/components/picture.css" />
     <link rel="stylesheet" href="css/components/header.css" />
+    <link rel="stylesheet" href="css/components/box-colored.css" />
+    <link rel="stylesheet" href="css/components/icon.css" />
     <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/layouts.css" />
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
     <script src="js/header.js" defer></script>
   </head>
@@ -15,16 +18,14 @@
     <header id="header">
       <nav>
         <a href="index.html">
-          <div class="fa">
-            <i class="fa fa-solid fa-house-chimney fa-xl"></i>
-          </div>
+          <div class="fa"><i class="fa fa-solid fa-house-chimney fa-xl"></i></div>
           <span>HOME</span>
         </a>
         <a class="active" href="about.html">
           <div class="fa"><i class="fa fa-solid fa-user fa-xl"></i></div>
           <span>ABOUT</span>
         </a>
-        <a href="projects.html">
+        <a href="#">
           <div class="fa"><i class="fa-solid fa-list-check fa-xl"></i></div>
           <span>PROJECTS</span>
         </a>
@@ -32,113 +33,162 @@
           <div class="fa"><i class="fa fa-solid fa-blog fa-xl"></i></div>
           <span>BLOG</span>
         </a>
-      </nav>
-      <nav>
-        <a class="link" href="linkedin.com/in/edu-gambin">
-          <i class="fa-brands fa-linkedin fa-xl"></i>
-        </a>
-        <a class="link" href="github.com/EduGambin">
-          <i class="fa-brands fa-github fa-xl"></i>
-        </a>
-        <a class="link" href="mailto:gambinmonserrat@gmail.com">
-          <i class="fa-solid fa-envelope fa-xl"></i>
+        <a href="#">
+          <div class="fa"><i class="fa fa-solid fa-envelope fa-xl"></i></div>
+          <span>CONTACT ME</span>
         </a>
       </nav>
+      <!-- <nav> -->
+      <!--   <a class="link" href="linkedin.com/in/edu-gambin"> <i class="fa-brands fa-linkedin fa-xl"></i> </a> -->
+      <!--   <a class="link" href="github.com/EduGambin"> <i class="fa-brands fa-github fa-xl"></i> </a> -->
+      <!--   <a class="link" href="mailto:gambinmonserrat@gmail.com"> <i class="fa-solid fa-envelope fa-xl"></i> </a> -->
+      <!-- </nav> -->
     </header>
     <main>
-      <section>
-        <h1>TL;DR</h1>
-        <div class="column-layout-one">
+      <div class="box-colored-wide">
+        <p style="text-align: center">Looking for a quick overview? <a href="#">Click here to see my CV</a>.</p>
+      </div>
+
+      <h1>Work Experience</h1>
+
+      <div class="box-colored-wide layout-space-below">
+        <h3 style="margin: 0; padding: 0">C++ Software Engineer</h3>
+        <h4 style="margin: 0; padding: 0">Amadeus IT</h4>
+        <div style="display: flex; flex-direction: column; justify-content: center">
+          <div class="columns-two">
+            <div>
+              <p>
+                Starting from September 2023, I have been working at <a href="https://amadeus.com/">Amadeus</a> as a C++
+                Software Engineer. My job focuses on optimizing the performance of our search engine, which is
+                responsible for finding the cheapest available flights. My key responsibilities include:
+              </p>
+              <ul>
+                <li>
+                  <b>Performance Optimization:</b> Enhancing algorithms and refining data structures to boost the speed
+                  and accuracy of our search results.
+                </li>
+                <li>
+                  <b>Comprehensive Testing:</b> Regularly conducting unit and non-regression tests to ensure our
+                  software is robust and reliable.
+                </li>
+                <li>
+                  <b>Performance Measurement and Reporting:</b> Continuously monitoring system performance, analyzing
+                  key metrics, and creating detailed reports to guide our optimization efforts.
+                </li>
+                <li>
+                  <b>Documentation:</b> Crafting clear and detailed documentation to support our products and assist
+                  colleagues.
+                </li>
+                <li>
+                  <b>Support and Collaboration:</b> Providing technical support and guidance to my teammates. Moreover,
+                  I have been Scrum Master for my team many times (as a replacement).
+                </li>
+              </ul>
+              <p>
+                I joined Amadeus for a clear reason: to immerse myself in an international environment and discover new
+                possibilities beyond my home country and comfort zone. Leaving Spain was a difficult decision, but
+                ultimately, it was the right one.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="layout-grid">
+              <div class="box-colored-grid"><img class="icon" src="./assets/icons/cpp.svg" /> C/C++</div>
+              <div class="box-colored-grid"><img class="icon" src="./assets/icons/python.svg" /> Python</div>
+              <div class="box-colored-grid"><img class="icon" src="./assets/icons/git.svg" /> Git</div>
+              <div class="box-colored-grid"><img class="icon" src="./assets/icons/bash.svg" /> Bash</div>
+              <div class="box-colored-grid"><img class="icon" src="./assets/icons/docker.svg" /> Docker</div>
+              <div class="box-colored-grid"><img class="icon" src="./assets/icons/jenkins.svg" /> Jenkins</div>
+              <div class="box-colored-grid"><img class="icon" src="./assets/icons/neovim.svg" /> Neovim</div>
+              <div class="box-colored-grid"><img class="icon" src="./assets/icons/safe.png" /> SAFe</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-column-two layout-space-below">
+        <div class="column">
+          <div class="layout-grid">
+            <div class="box-colored-grid"><img class="icon" src="./assets/icons/cpp.svg" /> C/C++</div>
+            <div class="box-colored-grid"><img class="icon" src="./assets/icons/python.svg" /> Python</div>
+            <div class="box-colored-grid"><img class="icon" src="./assets/icons/git.svg" /> Git</div>
+            <div class="box-colored-grid"><img class="icon" src="./assets/icons/bash.svg" /> Bash</div>
+            <div class="box-colored-grid"><img class="icon" src="./assets/icons/docker.svg" /> Docker</div>
+            <div class="box-colored-grid"><img class="icon" src="./assets/icons/jenkins.svg" /> Jenkins</div>
+            <div class="box-colored-grid"><img class="icon" src="./assets/icons/neovim.svg" /> Neovim</div>
+            <div class="box-colored-grid"><img class="icon" src="./assets/icons/safe.png" /> SAFe</div>
+          </div>
+        </div>
+        <div class="column">
+          <h3>QA/DevOps Engineer</h3>
           <p>
-            Looking for a quick overview?
-            <a href="#">Click here to view my CV</a>.
+            During my years at university, I worked at Orenes (in Murcia, Spain) as a QA/DevOps Engineer. My job was
+            slightly different each year, but in summary my key responsibilities included:
+          </p>
+          <ul>
+            <li>
+              <b>Performance testing:</b>
+              Adding features to the code can sometimes lead to an increase in response time, execution time, or memory
+              complexity. My job was to create unit tests to measure execution time, save the results, and compare them
+              with previous instances stored in database.
+            </li>
+            <li>
+              <b>Pipeline management:</b>
+              Triggering the tests manually is not as efficient as having them launched whenever a new pull request is
+              created. This ensures the testing is performed regularly and before critical failure may happen.
+            </li>
+          </ul>
+          <p>
+            I met amazing people and I take many memories from that time. I will forever be grateful to the team for
+            allowing me to become part of their day-to-day work. If they ever read this, I hope they know I would be a
+            totally different person without them.
           </p>
         </div>
-      </section>
+      </div>
+      <div class="layout-column-two layout-space-below">
+        <div class="column">
+          <h3>Private tutoring</h3>
+          <p>
+            During my years at university I frequently held private lessons for all types of students, ranging from high
+            school to university, and focused on Mathematics, Physics, Chemistry and Programming.
+          </p>
+          <p>
+            This was a great learning experience for me, and got me thinking in the possibility of becoming a teacher in
+            the future. There is something special in transmitting your knowledge to a person that is willing to listen
+            and to learn from you.
+          </p>
+        </div>
+        <div class="column"></div>
+      </div>
+      <h1>Education</h1>
+      <div class="columns-one">
+        <p>
+          I studied a special program at my university that allowed me to do <b>two Bachelor's degrees</b> at the same
+          time. Here is a brief of the experience.
+        </p>
+      </div>
+      <div class="columns-two">
+        <div class="box-colored-wide">
+          <h3 class="heading-decorated">Mathematics</h3>
+          <p>
+            This is one of the biggest achievements of my life, no doubt. Mathematics is a degree that changes one from
+            the inside out, and puts into perspective everything you thought you knew about yourself.
+          </p>
+          <p>
+            To conclude the degree I delivered my thesis
+            <em>Transformadas de Fourier y de Radón, y aplicaciones</em> (Fourier and Radon transforms, and
+            applications), one of the projects I am most proud of making.
+          </p>
+        </div>
 
-      <!-- <section> -->
-      <!--   <h1>Working Experience</h1> -->
-      <!--   <section> -->
-      <!--     <h2>C++ Software Engineer</h2> -->
-      <!--     <p> -->
-      <!--       In September 2023 I joined the multinational company -->
-      <!--       <a href="amadeus.com">Amadeus</a> (in Nice, France) to work as a -->
-      <!--       <span style="white-space: nowrap">C++</span> Software Engineer. My motivation was clear: I wanted to become -->
-      <!--       part of an international environment and discover new possibilities out of my home country and my comfort -->
-      <!--       zone. -->
-      <!--     </p> -->
-      <!--     <p>My day-to-day work includes:</p> -->
-      <!--     <ul> -->
-      <!--       <li> -->
-      <!--         Working with a large repository of -->
-      <!--         <span style="white-space: nowrap">C++</span> code. This is updated frequently (several times per day) and -->
-      <!--         by many people in the company. -->
-      <!--       </li> -->
-      <!--       <li> -->
-      <!--         Building both unit and non-regression tests to ensure the quality of the product and to avoid errors -->
-      <!--         during the development and the execution of the program. -->
-      <!--       </li> -->
-      <!--       <li>Making performance assessments to ensure the quality of the deliveries for the clients.</li> -->
-      <!--     </ul> -->
-      <!--     <p> -->
-      <!--       I use a lot of technologies in my day-to-day, such as -->
-      <!--       <i class="fa-brands fa-git-alt"></i> <b>Git</b> for managing the repository, the branches, and the pull -->
-      <!--       requests; <i class="fa-brands fa-docker"></i> <b>Docker</b> for compiling the code; -->
-      <!--       <i class="fa-brands fa-jenkins"></i> <b>Jenkins</b> for the CI pipeline; -->
-      <!--       <i class="fa-brands fa-vimeo-v"></i> <b>Vim</b> to have a flexible yet powerful code editor; -->
-      <!--       <i class="fa-solid fa-house-laptop"></i> <b>SSH</b> to connect to remote machines and test in controlled -->
-      <!--       environments; <i class="fa-brands fa-linux"></i> <b>Bash</b> for extracting quickly and efficiently data -->
-      <!--       from a huge number of files; and <i class="fa-brands fa-python"></i> <b>Python</b> for analyzing said data. -->
-      <!--     </p> -->
-      <!--   </section> -->
-      <!--   <section> -->
-      <!--     <h2>QA/DevOps Engineer</h2> -->
-      <!--     <p> -->
-      <!--       During my years at university I worked at Orenes (in Murcia, Spain) as a QA/DevOps Engineer. It was an -->
-      <!--       incredible experience and I met so many wonderful people to whom I will be forever grateful for the -->
-      <!--       opportunity they gave me. -->
-      <!--     </p> -->
-      <!--     <p>Among the things I learned, I can highlight:</p> -->
-      <!--     <ul> -->
-      <!--       <li>Working with pipelines in Jenkins for CI/CD and automating processes with it.</li> -->
-      <!--       <li>Creating performance shootings with popular tools like JMeter.</li> -->
-      <!--     </ul> -->
-      <!--   </section> -->
-      <!--   <section> -->
-      <!--     <h2>Private tutoring</h2> -->
-      <!--     <p> -->
-      <!--       During my years at university I frequently held private lessons for all types of students, ranging from high -->
-      <!--       school to university, and focused on Mathematics, Physics, Chemistry and Programming. -->
-      <!--     </p> -->
-      <!--     <p> -->
-      <!--       This was a great learning experience for me, and got me thinking in the possibility of becoming a teacher in -->
-      <!--       the future. There is something special in transmitting your knowledge to a person that is willing to listen -->
-      <!--       and to learn from you. -->
-      <!--     </p> -->
-      <!--   </section> -->
-      <!-- </section> -->
-
-      <!-- <section> -->
-      <!--   <h1>Education</h1> -->
-      <!--   <h2>BSc in Mathematics</h2> -->
-      <!--   <p> -->
-      <!--     This is one of the biggest achievements of my life, no doubt. Mathematics is a degree that changes one from -->
-      <!--     the inside out, and puts into perspective everything you thought you knew about yourself. -->
-      <!--   </p> -->
-      <!--   <p> -->
-      <!--     To conclude the degree I delivered my thesis -->
-      <!--     <em>Transformadas de Fourier y de Radón, y aplicaciones</em> (Fourier and Radon transforms, and applications), -->
-      <!--     one of the projects I am most proud of making. -->
-      <!--   </p> -->
-      <!---->
-      <!--   <h2>BSc in Computer Engineering</h2> -->
-      <!--   <p> -->
-      <!--     Since I was very young (3 years old I am told) I have always been interested in computers and machines in -->
-      <!--     general. There is something magical about telling the computer what to do and seeing it perform exactly as you -->
-      <!--     have instructed. -->
-      <!--   </p> -->
-      <!-- </section> -->
-
+        <div class="box-colored-wide">
+          <h3 class="heading-decorated">Comp. Engineering</h3>
+          <p>
+            Since I was very young (3 years old I am told) I have always been interested in computers and machines in
+            general. There is something magical about telling the computer what to do and seeing it perform exactly as
+            you have instructed.
+          </p>
+        </div>
+      </div>
       <!-- <section> -->
       <!--   <h1>Skills</h1> -->
       <!---->
@@ -190,146 +240,106 @@
       <!--     economy management, and leadership of a small team that helped me. -->
       <!--   </p> -->
       <!-- </section> -->
-
-      <section>
-        <h1>Personal</h1>
-        <div class="column-layout-two align-top">
-          <div class="column">
+      <h1>Personal</h1>
+      <div class="column-layout-two align-top">
+        <div class="column">
+          <p>
+            There is so much of this place in my DNA. If you asked me where is the attractiveness of it I wouldn't be
+            able to tell right away, yet I could be talking for hours and hours about its wonders. If I had to summarize
+            the beauty of Murcia, it would be:
+          </p>
+          <p>
+            There is so much of this place in my DNA. If you asked me where is the attractiveness of it I wouldn't be
+            able to tell right away, yet I could be talking for hours and hours about its wonders. If I had to summarize
+            the beauty of Murcia, it would be:
+          </p>
+        </div>
+        <div class="column">
+          <p>
+            There is so much of this place in my DNA. If you asked me where is the attractiveness of it I wouldn't be
+            able to tell right away, yet I could be talking for hours and hours about its wonders. If I had to summarize
+            the beauty of Murcia, it would be:
+          </p>
+        </div>
+      </div>
+      <div class="box-colored-wide">
+        <h2 class="heading-decorated">A love letter to Murcia</h2>
+        <div class="layout-column-two">
+          <div class="column-small">
+            <h4>Everyone has a home and this is mine, there is so much this city has given to me</h4>
             <p>
-              There is so much of this place in my DNA. If you asked me where is
-              the attractiveness of it I wouldn't be able to tell right away,
-              yet I could be talking for hours and hours about its wonders. If I
-              had to summarize the beauty of Murcia, it would be:
+              There is so much of this place in my DNA. If you asked me where is the attractiveness of it I wouldn't be
+              able to tell right away, yet I could be talking for hours and hours about its wonders. If I had to
+              summarize the beauty of Murcia, it would be:
             </p>
             <p>
-              There is so much of this place in my DNA. If you asked me where is
-              the attractiveness of it I wouldn't be able to tell right away,
-              yet I could be talking for hours and hours about its wonders. If I
-              had to summarize the beauty of Murcia, it would be:
+              <b>> The people.</b> Everyone is warm and friendly, people from the south are usually welcoming, but here
+              is specially true.
+            </p>
+            <p>
+              <b>> The food.</b> Best of them are the <i>marinera</i> (she sailor), the <i>pastel de carne</i> (meat
+              pie) and the <i>paparajote</i> (n.t.).
+            </p>
+            <p>
+              <b>> The streets.</b> The city breaths, and you can tell form just walking around the city center. And
+              speaking of that, <i>you can walk everywhere</i>!
             </p>
           </div>
-          <div class="column">
-            <p>
-              There is so much of this place in my DNA. If you asked me where is
-              the attractiveness of it I wouldn't be able to tell right away,
-              yet I could be talking for hours and hours about its wonders. If I
-              had to summarize the beauty of Murcia, it would be:
-            </p>
+          <div class="column-small">
+            <figure>
+              <img src="assets/murcia-catedral.jpg" />
+              <figcaption>A view of Murcia's Cathedral, its most important landmark</figcaption>
+            </figure>
           </div>
         </div>
-
-        <div class="box-colored">
-          <h2 class="heading-decorated">A love letter to Murcia</h2>
-          <div class="column-layout-two align-middle">
-            <div class="column">
-              <h4>
-                Everyone has a home and this is mine, there is so much this city
-                has given to me
-              </h4>
-              <p>
-                There is so much of this place in my DNA. If you asked me where
-                is the attractiveness of it I wouldn't be able to tell right
-                away, yet I could be talking for hours and hours about its
-                wonders. If I had to summarize the beauty of Murcia, it would
-                be:
-              </p>
-              <p>
-                <b>> The people.</b> Everyone is warm and friendly, people from
-                the south are usually welcoming, but here is specially true.
-              </p>
-              <p>
-                <b>> The food.</b> Best of them are the <i>marinera</i> (she
-                sailor), the <i>pastel de carne</i> (meat pie) and the
-                <i>paparajote</i> (n.t.).
-              </p>
-              <p>
-                <b>> The streets.</b> The city breaths, and you can tell form
-                just walking around the city center. And speaking of that,
-                <i>you can walk everywhere</i>!
-              </p>
-            </div>
-
-            <div class="column">
-              <figure>
-                <img src="assets/murcia-catedral.jpg" />
-                <figcaption>
-                  A view of Murcia's Cathedral, its most important landmark
-                </figcaption>
-              </figure>
-            </div>
-          </div>
-        </div>
-
-        <section>
-          <h2>Hobbies</h2>
-
-          <figure style="float: right">
-            <img src="assets/221b.jpg" />
-            <figcaption>Can you tell how happy I am at SH's door?</figcaption>
-          </figure>
-
-          <section>
-            <h4>Videogames</h4>
-
-            <p>
-              My biggest hobby by far is <b>playing videogames</b>. I think this
-              goes hand to hand with my passion for computers, and I can no
-              longer differentiate between one and the other. My first contact
-              with programming was through Unreal Engine 4, where the logic
-              could be created using visual scripting through nodes. I fell in
-              love with the idea of the computer doing exactly what I was
-              telling it to do that I spent almost 200hrs creating small
-              experiments of videogames. Sadly, those projects are lost forever
-              with my old computer, but I still have the good memories I made
-              with them.
-            </p>
-          </section>
-
-          <p>
-            My personal selection is <em>Outer Wilds</em> (which changed my life
-            forever), the original <em>Fallout</em> (which taught me that
-            limitations are just opportunities for creativity),
-            <em>Minecraft</em> (this one does not need introduction), and
-            <em>The Beginner's Guide</em> (which today still makes me question
-            what is it that I want to pursue in life). I could keep going and
-            going, but I restrain myself.
-          </p>
-
-          <p>
-            <b>Reading</b> is another of my passions, being fantasy my go-to
-            genre through my life. <em>Harry Potter</em>, <em>The Witcher</em>,
-            <em>Mistborn</em>, and so, so many others. Sherlock Holmes, Agatha
-            Christie, and other mystery novels have also gotten my attention
-            since my childhood. In fact, when I was a child, I always said that
-            as a grown up I would like to be a detective like those in the
-            books. To some extent, I think I have become one (not how I expected
-            though!). These days I am more focused on reading non-fiction, with
-            some exceptions because of a personal decision: I read every book in
-            their original language. This proves more difficult in French, thus
-            I read fiction in that language. In Spanish and English I am
-            currently reading <em>El infinito en un Junco</em> from Irene
-            Vallejo, and <em>Thinking, fast and slow</em> from Daniel Kahneman.
-            In French, however, since I am still learning, I am (slowsly)
-            reading <em>La petite fille de Monsieur Linh</em>, from Philippe
-            Claudel. I also enjoy <b>playing sports</b> and doing exercise.
-            Football is the most popular sport in Spain, so it is no surprise
-            that it is the one I have played the most. The most that I played
-            was in high school where I used to play in a team at regional level.
-            These days I still try to play once or twice a week, but it
-            sometimes proves difficult because of schedule. Swimming has also
-            been a constant in my life, whether in the sea or in pool. I also
-            used to go bouldering from time to time, but since I moved to France
-            I have yet to return to that habit. Lastly, I often
-            <b>play the guitar</b>. This began at university, and I have not
-            stopped since. The best feeling in the world is to have it around
-            and, almost unintentionally, picking it up and starting to play.
-            There is a marvelous video that illustrates perfectly the feeling of
-            challenge and reward one feels when playing an instrument: it
-            produces
-            <a href="https://youtu.be/R0JKCYZ8hng">fireworks in your brain</a>.
-          </p>
-        </section>
-      </section>
+      </div>
+      <!--   <section> -->
+      <!--     <h2>Hobbies</h2> -->
+      <!--     <figure style="float: right"> -->
+      <!--       <img src="assets/221b.jpg" /> -->
+      <!--       <figcaption>Can you tell how happy I am at SH's door?</figcaption> -->
+      <!--     </figure> -->
+      <!--     <section> -->
+      <!--       <h4>Videogames</h4> -->
+      <!--       <p> -->
+      <!--         My biggest hobby by far is <b>playing videogames</b>. I think this goes hand to hand with my passion for -->
+      <!--         computers, and I can no longer differentiate between one and the other. My first contact with programming -->
+      <!--         was through Unreal Engine 4, where the logic could be created using visual scripting through nodes. I fell -->
+      <!--         in love with the idea of the computer doing exactly what I was telling it to do that I spent almost 200hrs -->
+      <!--         creating small experiments of videogames. Sadly, those projects are lost forever with my old computer, but -->
+      <!--         I still have the good memories I made with them. -->
+      <!--       </p> -->
+      <!--     </section> -->
+      <!--     <p> -->
+      <!--       My personal selection is <em>Outer Wilds</em> (which changed my life forever), the original -->
+      <!--       <em>Fallout</em> (which taught me that limitations are just opportunities for creativity), -->
+      <!--       <em>Minecraft</em> (this one does not need introduction), and <em>The Beginner's Guide</em> (which today -->
+      <!--       still makes me question what is it that I want to pursue in life). I could keep going and going, but I -->
+      <!--       restrain myself. -->
+      <!--     </p> -->
+      <!--     <p> -->
+      <!--       <b>Reading</b> is another of my passions, being fantasy my go-to genre through my life. -->
+      <!--       <em>Harry Potter</em>, <em>The Witcher</em>, <em>Mistborn</em>, and so, so many others. Sherlock Holmes, -->
+      <!--       Agatha Christie, and other mystery novels have also gotten my attention since my childhood. In fact, when I -->
+      <!--       was a child, I always said that as a grown up I would like to be a detective like those in the books. To -->
+      <!--       some extent, I think I have become one (not how I expected though!). These days I am more focused on reading -->
+      <!--       non-fiction, with some exceptions because of a personal decision: I read every book in their original -->
+      <!--       language. This proves more difficult in French, thus I read fiction in that language. In Spanish and English -->
+      <!--       I am currently reading <em>El infinito en un Junco</em> from Irene Vallejo, and -->
+      <!--       <em>Thinking, fast and slow</em> from Daniel Kahneman. In French, however, since I am still learning, I am -->
+      <!--       (slowsly) reading <em>La petite fille de Monsieur Linh</em>, from Philippe Claudel. I also enjoy -->
+      <!--       <b>playing sports</b> and doing exercise. Football is the most popular sport in Spain, so it is no surprise -->
+      <!--       that it is the one I have played the most. The most that I played was in high school where I used to play in -->
+      <!--       a team at regional level. These days I still try to play once or twice a week, but it sometimes proves -->
+      <!--       difficult because of schedule. Swimming has also been a constant in my life, whether in the sea or in pool. -->
+      <!--       I also used to go bouldering from time to time, but since I moved to France I have yet to return to that -->
+      <!--       habit. Lastly, I often <b>play the guitar</b>. This began at university, and I have not stopped since. The -->
+      <!--       best feeling in the world is to have it around and, almost unintentionally, picking it up and starting to -->
+      <!--       play. There is a marvelous video that illustrates perfectly the feeling of challenge and reward one feels -->
+      <!--       when playing an instrument: it produces <a href="https://youtu.be/R0JKCYZ8hng">fireworks in your brain</a>. -->
+      <!--     </p> -->
+      <!--   </section> -->
+      <!-- </section> -->
     </main>
   </body>
 </html>

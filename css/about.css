@@ -5,8 +5,8 @@ body {
 }
 
 body {
-  width: 92vw;
-  max-width: 1440px;
+  padding: 1.5rem 3rem;
+  max-width: 1280px;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -16,15 +16,18 @@ main {
   padding-top: 4rem;
 }
 
-h4,
-p {
+ul {
+  padding-left: 2rem;
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3 {
-  text-align: center;
+li:not(:last-child) {
+  margin-bottom: 0.2rem;
+}
+
+h4,
+p {
+  line-height: 1.5;
 }
 
 section {
@@ -70,13 +73,6 @@ figure {
   margin: 0 0.5em;
 }
 
-.box-colored {
-  background-color: var(--secondary-25);
-  padding: 3vw;
-  border-radius: 1vw;
-  margin: 3em 0;
-}
-
 .column-layout-one {
   display: flex;
   justify-content: center;
@@ -112,10 +108,14 @@ figure {
 
   p {
     margin: 0 auto;
-    padding-bottom: 2vh;
   }
 
   .picture {
     width: 45vh;
   }
+}
+
+.img-inline {
+  height: 2em; /* Adjust the height of the image to match the text size */
+  margin-right: 1em; /* Optional: Add some space between the image and text */
 }
