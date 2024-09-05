@@ -2,61 +2,131 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home | Eduardo Gambín Monserrat</title>
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/components/picture.css" />
-    <link rel="stylesheet" href="css/components/header.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
-    <script src="js/header.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home | Edu Gambín</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/css/all.min.css" rel="stylesheet" />
   </head>
+
   <body>
-    <header id="header">
-      <nav>
-        <a class="active" href="index.html">
-          <div class="fa">
-            <i class="fa fa-solid fa-house-chimney fa-xl"></i>
-          </div>
-          <span>HOME</span>
+    <aside>
+      <img id="splash-image" src="./profile.png" />
+      <h1 id="splash-name">Eduardo <span>Gambín Monserrat</span></h1>
+      <p id="splash-text">Graduate in Mathematics and Computer Science with experience as a C++ Software Engineer</p>
+      <div id="splash-email">
+        <a class="social" target="_blank" href="mailto:gambinmonserratedu@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          gambinmonserratedu@gmail.com
         </a>
-        <a href="about.html">
-          <div class="fa"><i class="fa fa-solid fa-user fa-xl"></i></div>
-          <span>ABOUT</span>
-        </a>
-        <a href="#">
-          <div class="fa"><i class="fa-solid fa-list-check fa-xl"></i></div>
-          <span>PROJECTS</span>
-        </a>
-        <a href="#">
-          <div class="fa"><i class="fa fa-solid fa-blog fa-xl"></i></div>
-          <span>BLOG</span>
-        </a>
-      </nav>
-      <nav>
-        <a class="link" href="linkedin.com/in/edu-gambin">
+      </div>
+      <div id="splash-social">
+        <a class="social" target="_blank" href="https://www.linkedin.com/in/edu-gambin/">
           <i class="fa-brands fa-linkedin fa-xl"></i>
+          LinkedIn
         </a>
-        <a class="link" href="github.com/EduGambin">
+        <a class="social" target="_blank" href="https://github.com/EduGambin">
           <i class="fa-brands fa-github fa-xl"></i>
+          GitHub
         </a>
-        <a class="link" href="mailto:gambinmonserrat@gmail.com">
-          <i class="fa-solid fa-envelope fa-xl"></i>
-        </a>
-      </nav>
-    </header>
+      </div>
+    </aside>
+
     <main>
-      <div>
-        <h1 style="text-align: left">The beginning of something incredible</h1>
+      <section>
+        <h2>Work Experience</h2>
+        <div class="work-entry-header">
+          <h3>Junior Software Developer · Alten</h3>
+          <span>SEP 2023 <span>&#8211;</span> NOW</span>
+        </div>
         <p>
-          ¡Hola! My name is <b>Eduardo</b>, or <b>Edu</b> for short. I am a C++ Software Engineer with a BSc in
-          <em>Mathematics</em> and another BSc in <em>Computer Engineering</em>. Currently, I am searching for a
-          <b>Master's Degree in Data Science</b>. Let's get in touch!
+          Amadeus focuses on finding the best price for a flight between two cities. My job is to ensure the engine is
+          capable of doing so as efficiently as possible, since exploring all of the options is unfeasible. Thus, we
+          rely on branch and bounding, heuristics, optimizations, and mathematical-model-based predictions to speed up
+          times.
         </p>
-      </div>
-      <div>
-        <img class="picture" src="assets/perfil.jpg" />
-      </div>
+        <p>
+          In my day-to-day, I spend most of my time writing C++ code, but I also write tests for the new features (both
+          unit and non-regression), create reports using tools like <code>pandas</code> and <code>numpy</code> (Python),
+          review teammates' code, create documentation and guides for future reference, and many more.
+        </p>
+        <div class="work-entry-header">
+          <h3>QA Engineer Intern · Grupo Orenes</h3>
+          <span>JUL 2020 <span>&#8211;</span> SEP 2022</span>
+        </div>
+        <p>
+          Intern on three separate occasions at Grupo Orenes, in Murcia. I had a great learning experience with people
+          there, and I will always be thankful to them for the opportunity they gave me.
+        </p>
+        <p>
+          I created many scale-time-based tests (which still are in use today), integrated them in the CI/CD process,
+          store/retrieve/compare results from previous executions, and much more.
+        </p>
+
+        <div class="work-entry-header">
+          <h3>Private tutor · <em>Freelance</em></h3>
+          <span>SEP 2020 <span>&#8211;</span> JUL 2023</span>
+        </div>
+        <p>
+          During my years at university I regularly gave private lessons to various students ranging from high-school to
+          graduate level. Subjects abroaded Mathematics, Physics, Chemistry, Computer Science, Programming (general),
+          and several misc ones.
+        </p>
+        <p>All my students improved their grades and some even began to consider doing a BSc in Mathematics.</p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+
+        <div class="work-entry-header">
+          <h3>BSc in Mathematics</h3>
+          <span>2017 <span>&#8211;</span> JUL 2023</span>
+        </div>
+        <p class="note">Part of a double BSc program, studied at once with the CS BSc.</p>
+        <p>
+          Mathematics humbles its students in ways you can no foresee. In return, they provide one of the most
+          satisfactory feelings I have ever felt. I am very proud of having this major, and how has it changed me as a
+          person.
+        </p>
+        <p>
+          I am specially proud of my thesis,
+          <em>Fourier and Radon transforms, and applications</em>, which I finished with honors.
+          <a href="#">You can check it here</a>.
+        </p>
+
+        <div class="work-entry-header">
+          <h3>BSc in Computer Science</h3>
+          <span>2017 <span>&#8211;</span> JUL 2023</span>
+        </div>
+        <p class="note">Part of a double BSc program, studied at once with the Mathematics BSc.</p>
+
+        <p>
+          I specialized in AI in my final year, where I learned the basics of many modern techniques such as neural
+          networks, ontologies, artificial vision, data analysis, and many more.
+        </p>
+        <p>
+          One of the instances I have more fond is the time where we designed a simplified version of a MIPS CPU, and
+          the exam was to develop a new instruction for it. It was an amazing experience.
+        </p>
+      </section>
+
+      <section>
+        <h2>About me</h2>
+
+        <p>
+          I consider myself as a hardworking person with a deep curiosity for all that is around him. I am currently in
+          search for a Master's Degree in Data Science, since my current goal is to obtain a PHD in that field.
+        </p>
+        <p>
+          I know how to speak <em>Spanish</em> (I am a native speaker), <em>English</em> (C1 level), and
+          <em>French</em> (I currently live in France).
+        </p>
+        <p>
+          My hobbies range from playing videogames (try <em>Outer Wilds</em> if you have the chance!), to reading
+          (recently read <em>La petite fille the Monsieur Linh</em>), playing the guitar, doing boxing, and going out
+          with friends. Ah, and I love <em>specialty coffee</em>!
+        </p>
+        <p>Thanks for reading my web! If you have any questions, do not hesitate in contacting me!</p>
+      </section>
     </main>
   </body>
 </html>
