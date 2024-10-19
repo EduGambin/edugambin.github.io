@@ -1,0 +1,35 @@
+---
+import IconGithub from "../components/icons/github.astro";
+import IconLinkedin from "../components/icons/linkedin.astro";
+import IconEnvelope from "../components/icons/envelope.astro";
+import IconTwitter from "../components/icons/twitter.astro";
+---
+
+<section class="mb-48">
+  <h2>Contact me!</h2>
+  <p class="text-lg mb-4">You can reach me through the following channels:</p>
+  <nav class="flex justify-between">
+    <a href="mailto:edugambin@gmail.com">
+      <IconEnvelope />
+      edugambin@gmail.com
+    </a>
+    <a href="https://github.com/edugambin">
+      <IconGithub />
+      github.com/edugambin
+    </a>
+    <a href="https://www.linkedin.com/in/edugambin/">
+      <IconLinkedin />
+      linkedin.com/in/edugambin
+    </a>
+    <a href="https://twitter.com/edugambin">
+      <IconTwitter />
+      twitter.com/edugambin
+    </a>
+  </nav>
+</section>
+
+<style>
+  a {
+    @apply text-lg font-bold border-2 px-6 py-4 rounded-xl border-black bg-amber-200 hover:bg-amber-400 transition inline-flex items-center gap-2;
+  }
+</style>

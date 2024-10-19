@@ -1,0 +1,50 @@
+---
+import Card from "../components/Card.astro";
+import IconSquareArrow from "../components/icons/square-arrow.astro";
+---
+
+<section>
+  <h2 class="text-6xl mb-8">Recently added content</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-12">
+    <Card
+      title="Autofitting randvars in Python"
+      date="28/09/2024"
+      url="/blog/autofit"
+      color="bg-white"
+    >
+      With SciPy and NumPy, we can easily fit random variables to the best
+      possible distribution.
+    </Card>
+    <Card
+      title="The Radon Transform"
+      date="28/09/2024"
+      url="/blog/radon-transform"
+      color="bg-sky-100"
+    >
+      The Radon transform is a powerful tool in medical imaging, enabling the
+      analysis of images with non-linear properties.
+    </Card>
+    <Card
+      title="How boxing changed my life"
+      date="28/09/2024"
+      url="/blog/radon-transform"
+      color="bg-orange-200"
+    >
+      Boxing is a sport that has changed my life in many ways. I've learned to
+      be more disciplined and focused, and I've developed a newfound
+      appreciation for hard work and perseverance.
+    </Card>
+  </div>
+
+  <p class="text-lg">
+    Searching for something else? Take a look at my
+    <a
+      href="/projects"
+      class="font-bold inline-flex gap-1 items-center hover:text-gray-400 transition"
+    >
+      projects page <IconSquareArrow /></a
+    >
+    for more content.
+  </p>
+</section>
