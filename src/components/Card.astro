@@ -1,61 +1,46 @@
 ---
+import IconCalendar from "../components/icons/calendar.astro";
+import IconSquareArrow from "../components/icons/square-arrow.astro";
+
 interface Props {
-	title: string;
-	body: string;
-	href: string;
+    title: string;
+    date: string;
+    url: string;
+    color: string;
 }
 
-const { href, title, body } = Astro.props;
+const { title, date, url, color } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
-<style>
-	.link-card {
-		list-style: none;
-		display: flex;
-		padding: 1px;
-		background-color: #23262d;
-		background-image: none;
-		background-size: 400%;
-		border-radius: 7px;
-		background-position: 100%;
-		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
-	}
-	.link-card > a {
-		width: 100%;
-		text-decoration: none;
-		line-height: 1.4;
-		padding: calc(1.5rem - 1px);
-		border-radius: 8px;
-		color: white;
-		background-color: #23262d;
-		opacity: 0.8;
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.25rem;
-		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-	}
-	p {
-		margin-top: 0.5rem;
-		margin-bottom: 0;
-	}
-	.link-card:is(:hover, :focus-within) {
-		background-position: 0;
-		background-image: var(--accent-gradient);
-	}
-	.link-card:is(:hover, :focus-within) h2 {
-		color: rgb(var(--accent-light));
-	}
+<article class=`flex flex-col p-8 border-2 border-black rounded-2xl ${color}`>
+    <h3 class="text-xl font-bold overflow-ellipsis overflow-hidden text-nowrap">
+        {title}
+    </h3>
+    <time class="text-sm font-light inline-flex items-center gap-1 mb-4">
+        <IconCalendar />
+        {date}
+    </time>
+    <p class="grow leading-tight mb-6">
+        <slot />
+    </p>
+    <p>
+        <a
+            href={url}
+            class="inline-flex gap-1 items-center font-bold hover:text-gray-400 transition"
+        >
+            Go to full article
+            <IconSquareArrow />
+        </a>
+    </p>
+</article>
+
+<style is:global>
+    .svg-inline--fa {
+        overflow: visible;
+        box-sizing: content-box;
+        display: inline-block;
+        width: 16px;
+        height: auto;
+        vertical-align: -0.125em;
+    }
 </style>
