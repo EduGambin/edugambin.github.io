@@ -11,14 +11,7 @@ import "@fontsource-variable/roboto-slab";
 		<title>Edu Gambín's website</title>
 	</head>
 	<body>
-		<p class="lg:hidden font-bold text-center text-2xl">
-			Non-full-screen view is still under development. Sorry!
-			<br />
-			Make sure to go full-screen to enjoy the website.
-		</p>
-		<div class="hidden lg:block">
-			<slot />
-		</div>
+		<slot />
 	</body>
 </html>
 
@@ -43,6 +36,6 @@ import "@fontsource-variable/roboto-slab";
 	}
 	h2 {
 		font-family: "Roboto Slab Variable", serif;
-		@apply text-6xl mb-8 font-medium tracking-tight;
+		@apply text-3xl md:text-6xl text-center md:text-start mb-8 font-medium tracking-tight;
 	}
 </style>

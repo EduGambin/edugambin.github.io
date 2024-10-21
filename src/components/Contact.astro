@@ -5,10 +5,10 @@ import IconEnvelope from "../components/icons/envelope.astro";
 import IconTwitter from "../components/icons/twitter.astro";
 ---
 
-<section class="mb-48">
+<section class="mb-48 px-8 md:px-0">
   <h2>Contact me!</h2>
   <p class="text-lg mb-4">You can reach me through the following channels:</p>
-  <nav class="flex justify-between">
+  <nav class="flex flex-col gap-4 md:flex-row md:justify-between">
     <a href="mailto:edugambin@gmail.com">
       <IconEnvelope />
       edugambin@gmail.com
@@ -30,6 +30,6 @@ import IconTwitter from "../components/icons/twitter.astro";
 
 <style>
   a {
-    @apply text-lg font-bold border-2 px-6 py-4 rounded-xl border-black bg-rose-200 hover:bg-rose-400 transition inline-flex items-center gap-2;
+    @apply text-lg font-bold border-2 px-6 py-4 rounded-xl border-black bg-rose-200 hover:bg-rose-400 transition inline-flex items-center justify-center md:justify-start gap-2;
   }
 </style>

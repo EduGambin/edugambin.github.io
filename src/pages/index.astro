@@ -1,14 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "../components/Header2.astro";
+import Header from "../components/Header.astro";
 import News from "../components/News.astro";
 import Presentation from "../components/Presentation.astro";
 import Contact from "../components/Contact.astro";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout>
 	<Header />
-	<main class="max-w-screen-xl mx-auto flex flex-col gap-32">
+	<main class="max-w-screen-xl mx-auto flex flex-col gap-16 md:gap-32">
 		<Presentation />
 		<News />
 		<Contact />

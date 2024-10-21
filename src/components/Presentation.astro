@@ -3,10 +3,10 @@ import IconInbox from "../components/icons/inbox.astro";
 ---
 
 <section>
-  <div class="flex justify-between items-center">
-    <article class="text-xl">
-      <h1 class="text-8xl font-bold mb-8 tracking-tighter">
-        <span class="block">Eduardo</span> Gambín Monserrat
+  <div class="flex flex-col md:flex-row justify-between items-center">
+    <article class="px-6 md:p-0 text-xl text-center md:text-start mb-8 md:mb-0">
+      <h1 class="text-4xl md:text-8xl font-bold mb-4 md:mb-8 tracking-tighter">
+        <span class="inline md:block">Eduardo</span> Gambín Monserrat
       </h1>
       <p class="max-w-prose mb-2">
         Graduate in the Double Bachelor's Degree in Mathematics and Computer
@@ -16,24 +16,14 @@ import IconInbox from "../components/icons/inbox.astro";
         Currently working as a C++ Software Developer, but searching for new
         challenges.
       </p>
-      <div class="flex gap-4">
-        <!-- <a
-          href="#"
-          class="text-lg font-bold border-2 px-6 py-4 rounded-xl border-black bg-orange-200 hover:bg-orange-400 transition
+      <a
+        href="#"
+        class="text-lg font-bold border-2 px-6 py-4 rounded-xl border-black bg-lime-300 hover:bg-lime-500 transition
           inline-flex items-center gap-1"
-        >
-          Get in contact
-          <IconAt />
-        </a> -->
-        <a
-          href="#"
-          class="text-lg font-bold border-2 px-6 py-4 rounded-xl border-black bg-lime-300 hover:bg-lime-500 transition
-          inline-flex items-center gap-1"
-        >
-          Download CV
-          <IconInbox />
-        </a>
-      </div>
+      >
+        Download CV
+        <IconInbox />
+      </a>
     </article>
     <img
       src="/me.png"
