@@ -1,6 +1,6 @@
 ---
 import "@fontsource-variable/public-sans";
-import "@fontsource-variable/roboto-serif";
+import "@fontsource-variable/roboto-slab";
 ---
 
 <!doctype html>
@@ -11,7 +11,14 @@ import "@fontsource-variable/roboto-serif";
 		<title>Edu Gambín's website</title>
 	</head>
 	<body>
-		<slot />
+		<p class="lg:hidden font-bold text-center text-2xl">
+			Non-full-screen view is still under development. Sorry!
+			<br />
+			Make sure to go full-screen to enjoy the website.
+		</p>
+		<div class="hidden lg:block">
+			<slot />
+		</div>
 	</body>
 </html>
 
@@ -29,13 +36,13 @@ import "@fontsource-variable/roboto-serif";
 		@apply bg-white;
 	}
 	body {
-		@apply bg-stone-100 text-black;
+		@apply bg-stone-100 text-black min-h-screen;
 	}
 	h1 {
-		font-family: "Roboto Serif Variable", serif;
+		font-family: "Roboto Slab Variable", serif;
 	}
 	h2 {
-		font-family: "Roboto Serif Variable", serif;
+		font-family: "Roboto Slab Variable", serif;
 		@apply text-6xl mb-8 font-medium tracking-tight;
 	}
 </style>
