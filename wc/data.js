@@ -4,18 +4,18 @@
 
 // 12 groups of 4. Order within a group is just the drawn order, not a prediction.
 const GROUPS = {
-  A: [["Mexico", "🇲🇽"], ["South Korea", "🇰🇷"], ["South Africa", "🇿🇦"], ["Czechia", "🇨🇿"]],
-  B: [["Canada", "🇨🇦"], ["Switzerland", "🇨🇭"], ["Qatar", "🇶🇦"], ["Bosnia-Herzegovina", "🇧🇦"]],
-  C: [["Brazil", "🇧🇷"], ["Morocco", "🇲🇦"], ["Scotland", "🏴󠁧󠁢󠁳󠁣󠁴󠁿"], ["Haiti", "🇭🇹"]],
-  D: [["USA", "🇺🇸"], ["Paraguay", "🇵🇾"], ["Australia", "🇦🇺"], ["Turkiye", "🇹🇷"]],
-  E: [["Germany", "🇩🇪"], ["Ecuador", "🇪🇨"], ["Ivory Coast", "🇨🇮"], ["Curacao", "🇨🇼"]],
-  F: [["Netherlands", "🇳🇱"], ["Japan", "🇯🇵"], ["Tunisia", "🇹🇳"], ["Sweden", "🇸🇪"]],
-  G: [["Belgium", "🇧🇪"], ["Iran", "🇮🇷"], ["Egypt", "🇪🇬"], ["New Zealand", "🇳🇿"]],
-  H: [["Spain", "🇪🇸"], ["Uruguay", "🇺🇾"], ["Saudi Arabia", "🇸🇦"], ["Cape Verde", "🇨🇻"]],
-  I: [["France", "🇫🇷"], ["Senegal", "🇸🇳"], ["Norway", "🇳🇴"], ["Iraq", "🇮🇶"]],
-  J: [["Argentina", "🇦🇷"], ["Austria", "🇦🇹"], ["Algeria", "🇩🇿"], ["Jordan", "🇯🇴"]],
-  K: [["Portugal", "🇵🇹"], ["Colombia", "🇨🇴"], ["Uzbekistan", "🇺🇿"], ["DR Congo", "🇨🇩"]],
-  L: [["England", "🏴󠁧󠁢󠁥󠁮󠁧󠁿"], ["Croatia", "🇭🇷"], ["Panama", "🇵🇦"], ["Ghana", "🇬🇭"]],
+  A: [["México", "🇲🇽"], ["Corea del Sur", "🇰🇷"], ["Sudáfrica", "🇿🇦"], ["Chequia", "🇨🇿"]],
+  B: [["Canadá", "🇨🇦"], ["Suiza", "🇨🇭"], ["Catar", "🇶🇦"], ["Bosnia y Herzegovina", "🇧🇦"]],
+  C: [["Brasil", "🇧🇷"], ["Marruecos", "🇲🇦"], ["Escocia", "🏴󠁧󠁢󠁳󠁣󠁴󠁿"], ["Haití", "🇭🇹"]],
+  D: [["EE. UU.", "🇺🇸"], ["Paraguay", "🇵🇾"], ["Australia", "🇦🇺"], ["Turquía", "🇹🇷"]],
+  E: [["Alemania", "🇩🇪"], ["Ecuador", "🇪🇨"], ["Costa de Marfil", "🇨🇮"], ["Curazao", "🇨🇼"]],
+  F: [["Países Bajos", "🇳🇱"], ["Japón", "🇯🇵"], ["Túnez", "🇹🇳"], ["Suecia", "🇸🇪"]],
+  G: [["Bélgica", "🇧🇪"], ["Irán", "🇮🇷"], ["Egipto", "🇪🇬"], ["Nueva Zelanda", "🇳🇿"]],
+  H: [["España", "🇪🇸"], ["Uruguay", "🇺🇾"], ["Arabia Saudí", "🇸🇦"], ["Cabo Verde", "🇨🇻"]],
+  I: [["Francia", "🇫🇷"], ["Senegal", "🇸🇳"], ["Noruega", "🇳🇴"], ["Irak", "🇮🇶"]],
+  J: [["Argentina", "🇦🇷"], ["Austria", "🇦🇹"], ["Argelia", "🇩🇿"], ["Jordania", "🇯🇴"]],
+  K: [["Portugal", "🇵🇹"], ["Colombia", "🇨🇴"], ["Uzbekistán", "🇺🇿"], ["RD Congo", "🇨🇩"]],
+  L: [["Inglaterra", "🏴󠁧󠁢󠁥󠁮󠁧󠁿"], ["Croacia", "🇭🇷"], ["Panamá", "🇵🇦"], ["Ghana", "🇬🇭"]],
 };
 
 const GROUP_LETTERS = Object.keys(GROUPS);
@@ -78,4 +78,4 @@ const KO = [
   { id: 104, round: "Final", a: { m: 101, r: "W" }, b: { m: 102, r: "W" } },
 ];
 
-const ROUND_LABELS = { R16: "Round of 16", QF: "Quarter-finals", SF: "Semi-finals", "3rd": "Third place", Final: "Final" };
+const ROUND_LABELS = { R16: "Octavos de final", QF: "Cuartos de final", SF: "Semifinales", "3rd": "Tercer puesto", Final: "Final" };

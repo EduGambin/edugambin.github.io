@@ -115,8 +115,8 @@ function renderGroups(res) {
     });
     host.append(el("div", { class: "group-card" },
       el("header", {},
-        el("h3", {}, "Group " + L),
-        el("button", { class: "reset-group", onclick: () => { picks.groups[L] = []; renderAll(); } }, "reset")),
+        el("h3", {}, "Grupo " + L),
+        el("button", { class: "reset-group", onclick: () => { picks.groups[L] = []; renderAll(); } }, "reiniciar")),
       ...rows));
   }
 }
@@ -138,11 +138,11 @@ function renderThirds(res) {
   if (!groupsComplete()) {
     counter.textContent = "";
     const done = GROUP_LETTERS.filter((L) => (picks.groups[L] || []).length >= 3).length;
-    host.append(el("p", { class: "locked" }, `Rank all 12 groups first (${done}/12 done) to choose the qualifying thirds.`));
+    host.append(el("p", { class: "locked" }, `Ordena primero los 12 grupos (${done}/12 hechos) para elegir los terceros que se clasifican.`));
     return;
   }
 
-  counter.textContent = `${picks.thirds.length}/8 selected`;
+  counter.textContent = `${picks.thirds.length}/8 seleccionados`;
   const full = picks.thirds.length >= 8;
   for (const L of GROUP_LETTERS) {
     const thirdId = (picks.groups[L] || [])[2];
@@ -152,7 +152,7 @@ function renderThirds(res) {
     host.append(el("label", { class: cls },
       el("input", { type: "checkbox", checked: on, disabled, onchange: () => toggleThird(L) }),
       el("span", { class: "flag" }, TEAMS[thirdId].flag),
-      el("span", {}, `${TEAMS[thirdId].name} (3rd ${L})`)));
+      el("span", {}, `${TEAMS[thirdId].name} (3º ${L})`)));
   }
 }
 
@@ -170,13 +170,13 @@ function renderBracket(res) {
 
   if (picks.thirds.length < 8) {
     banner.hidden = true;
-    host.append(el("p", { class: "locked" }, "Finish the group standings and pick all 8 thirds to unlock the knockout bracket."));
+    host.append(el("p", { class: "locked" }, "Termina la clasificación de los grupos y elige los 8 terceros para desbloquear el cuadro eliminatorio."));
     return;
   }
 
   const champ = res.matches[104].winner;
   banner.hidden = !champ;
-  if (champ) banner.textContent = `🏆 Your champion: ${teamText(champ)}`;
+  if (champ) banner.textContent = `🏆 Tu campeón: ${teamText(champ)}`;
 
   // overlay that the connector lines are drawn into, behind the cards
   const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
@@ -184,10 +184,10 @@ function renderBracket(res) {
   host.append(svg);
 
   const columns = [
-    ["Round of 32", R32],
-    ["Round of 16", KO.filter((m) => m.round === "R16")],
-    ["Quarter-finals", KO.filter((m) => m.round === "QF")],
-    ["Semi-finals", KO.filter((m) => m.round === "SF")],
+    ["Dieciseisavos de final", R32],
+    ["Octavos de final", KO.filter((m) => m.round === "R16")],
+    ["Cuartos de final", KO.filter((m) => m.round === "QF")],
+    ["Semifinales", KO.filter((m) => m.round === "SF")],
     ["Final", KO.filter((m) => m.round === "Final")],
   ];
 
@@ -221,7 +221,7 @@ function renderBracket(res) {
   // third-place match lives in its own little block beneath the main bracket
   const tp = KO.find((m) => m.round === "3rd");
   host.append(el("div", { class: "third-place-wrap" },
-    el("h4", {}, "Third place"),
+    el("h4", {}, "Tercer puesto"),
     matchEl(tp.id, res)));
 
   // draw connectors once the cards have been laid out
@@ -274,7 +274,7 @@ function matchEl(id, res) {
     const tbd = !teamId;
     const won = teamId && teamId === m.winner;
     return el("div", { class: "slot" + (tbd ? " tbd" : "") + (won ? " won" : ""), onclick: tbd ? null : () => pickWinner(id, teamId) },
-      tbd ? el("span", { class: "name" }, "TBD")
+      tbd ? el("span", { class: "name" }, "Por definir")
           : [el("span", { class: "flag" }, TEAMS[teamId].flag), el("span", { class: "name" }, TEAMS[teamId].name)]);
   };
   return el("div", { class: "match", "data-m": id }, slot(m.a), slot(m.b));
@@ -341,7 +341,7 @@ function status(msg) {
 function runCompare() {
   const code = document.getElementById("friend-code").value;
   const decoded = decode(code);
-  if (!decoded) { status("That code didn't decode — check you copied all of it."); return; }
+  if (!decoded) { status("Ese código no se pudo leer; comprueba que lo has copiado entero."); return; }
   friendPicks = decoded;
   const mine = resolve(picks);
   const theirs = resolve(friendPicks);
@@ -369,10 +369,10 @@ function renderCompare(mine, theirs) {
   out.replaceChildren();
 
   // 1. Group standings
-  const gCard = el("div", { class: "compare-card" }, el("h3", {}, "Group standings"));
+  const gCard = el("div", { class: "compare-card" }, el("h3", {}, "Clasificación de los grupos"));
   let winAgree = 0, topTwoAgree = 0;
   gCard.append(el("div", { class: "compare-row" },
-    el("span", { class: "label" }, "Group"), el("span", { class: "label" }, "You (1st / 2nd)"), el("span", { class: "label" }, "Friend (1st / 2nd)")));
+    el("span", { class: "label" }, "Grupo"), el("span", { class: "label" }, "Tú (1º / 2º)"), el("span", { class: "label" }, "Amigo (1º / 2º)")));
   for (const L of GROUP_LETTERS) {
     const mo = mine.gr[L], to = theirs.gr[L];
     const sameWin = mo.w && mo.w === to.w;
@@ -380,21 +380,21 @@ function renderCompare(mine, theirs) {
     if (sameWin) winAgree++;
     if (sameTop2) topTwoAgree++;
     gCard.append(el("div", { class: "compare-row " + (sameTop2 ? "agree" : sameWin ? "" : "disagree") },
-      el("span", {}, "Group " + L),
+      el("span", {}, "Grupo " + L),
       el("span", {}, `${teamText(mo.w)} / ${teamText(mo.ru)}`),
       el("span", {}, `${teamText(to.w)} / ${teamText(to.ru)}`)));
   }
-  gCard.append(el("p", {}, el("span", { class: "score-pill" }, `Same winner: ${winAgree}/12`), " ",
-    el("span", { class: "score-pill" }, `Exact top-2: ${topTwoAgree}/12`)));
+  gCard.append(el("p", {}, el("span", { class: "score-pill" }, `Mismo ganador: ${winAgree}/12`), " ",
+    el("span", { class: "score-pill" }, `Top-2 exacto: ${topTwoAgree}/12`)));
   out.append(gCard);
 
   // 2. Thirds
   const myThirds = mine.thirds.filter(Boolean);
   const theirThirds = theirs.thirds.filter(Boolean);
   out.append(el("div", { class: "compare-card" },
-    el("h3", {}, "Best thirds"),
+    el("h3", {}, "Mejores terceros"),
     el("div", { class: "compare-row" },
-      el("span", { class: "label" }, "Yours"), el("span", { class: "label" }, "Friend's"), el("span", { class: "label" }, "In common")),
+      el("span", { class: "label" }, "Los tuyos"), el("span", { class: "label" }, "Los suyos"), el("span", { class: "label" }, "En común")),
     el("div", { class: "compare-row" },
       el("span", {}, myThirds.map(teamText).join(", ") || "—"),
       el("span", {}, theirThirds.map(teamText).join(", ") || "—"),
@@ -402,23 +402,23 @@ function renderCompare(mine, theirs) {
 
   // 3. Knockout progression — overlap of teams reaching each stage
   const stages = [
-    ["Reached Round of 16", range(73, 88)],
-    ["Reached Quarter-finals", range(89, 96)],
-    ["Reached Semi-finals", range(97, 100)],
-    ["Reached Final", [101, 102]],
+    ["Llegan a octavos", range(73, 88)],
+    ["Llegan a cuartos", range(89, 96)],
+    ["Llegan a semifinales", range(97, 100)],
+    ["Llegan a la final", [101, 102]],
   ];
-  const kCard = el("div", { class: "compare-card" }, el("h3", {}, "Knockout progression"));
+  const kCard = el("div", { class: "compare-card" }, el("h3", {}, "Avance en la eliminatoria"));
   for (const [label, ids] of stages) {
     const mineW = winnersOf(mine, ids), theirsW = winnersOf(theirs, ids);
     kCard.append(el("div", { class: "compare-row" },
       el("span", { class: "label" }, label),
-      el("span", {}, `you ${mineW.length} · friend ${theirsW.length}`),
-      el("span", { class: "score-pill" }, `${overlap(mineW, theirsW)} in common`)));
+      el("span", {}, `tú ${mineW.length} · amigo ${theirsW.length}`),
+      el("span", { class: "score-pill" }, `${overlap(mineW, theirsW)} en común`)));
   }
   const myChamp = mine.matches[104].winner, theirChamp = theirs.matches[104].winner;
   const champAgree = myChamp && myChamp === theirChamp;
   kCard.append(el("div", { class: "compare-row " + (champAgree ? "agree" : myChamp && theirChamp ? "disagree" : "") },
-    el("span", { class: "label" }, "🏆 Champion"),
+    el("span", { class: "label" }, "🏆 Campeón"),
     el("span", {}, teamText(myChamp)),
     el("span", {}, teamText(theirChamp))));
   out.append(kCard);
@@ -449,14 +449,14 @@ function init() {
 
   document.getElementById("copy-link").addEventListener("click", async () => {
     const url = location.href.split("#")[0] + "#" + encode(picks);
-    status((await copyText(url)) ? "Link copied — share it in the group chat." : "Couldn't copy automatically. Here it is: " + url);
+    status((await copyText(url)) ? "Enlace copiado: compártelo en el grupo." : "No se pudo copiar automáticamente. Aquí lo tienes: " + url);
   });
   document.getElementById("copy-code").addEventListener("click", async () => {
     const code = encode(picks);
-    status((await copyText(code)) ? "Code copied." : "Couldn't copy automatically. Here it is: " + code);
+    status((await copyText(code)) ? "Código copiado." : "No se pudo copiar automáticamente. Aquí lo tienes: " + code);
   });
   document.getElementById("reset-all").addEventListener("click", () => {
-    if (confirm("Clear all your picks?")) { picks = emptyPicks(); renderAll(); status("Cleared."); }
+    if (confirm("¿Borrar todos tus pronósticos?")) { picks = emptyPicks(); renderAll(); status("Borrado."); }
   });
   document.getElementById("compare-btn").addEventListener("click", runCompare);
   document.getElementById("clear-compare").addEventListener("click", clearCompare);

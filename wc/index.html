@@ -1,57 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>World Cup 2026 — Prediction Pool</title>
+  <title>Mundial 2026 — Porra de pronósticos</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>World Cup 2026 — Prediction Pool</h1>
-    <p class="tagline">Pick the group standings, then the knockout face-offs, all the way to the champion.</p>
+    <h1>Mundial 2026 — Porra de pronósticos</h1>
+    <p class="tagline">Elige las clasificaciones de cada grupo y luego los cruces de la fase eliminatoria, hasta el campeón.</p>
   </header>
 
   <!-- Share / compare bar -->
   <section id="share-bar">
     <div class="share-actions">
-      <button id="copy-link">Copy link</button>
-      <button id="copy-code">Copy code</button>
-      <button id="reset-all" class="danger">Reset all</button>
+      <button id="copy-link">Copiar enlace</button>
+      <button id="copy-code">Copiar código</button>
+      <button id="reset-all" class="danger">Borrar todo</button>
     </div>
     <div class="compare-actions">
-      <input id="friend-code" type="text" placeholder="Paste a friend's code to compare…" autocomplete="off">
-      <button id="compare-btn">Compare</button>
-      <button id="clear-compare" hidden>Clear compare</button>
+      <input id="friend-code" type="text" placeholder="Pega el código de un amigo para comparar…" autocomplete="off">
+      <button id="compare-btn">Comparar</button>
+      <button id="clear-compare" hidden>Quitar comparación</button>
     </div>
     <p id="share-status" class="status" aria-live="polite"></p>
   </section>
 
   <!-- Step 1: group standings -->
   <section id="groups-section">
-    <h2>1. Group standings</h2>
-    <p class="hint">Click teams in order: 1st, then 2nd, then 3rd. The 4th is whoever's left. Click a ranked team again to clear it and everything below it.</p>
+    <h2>1. Clasificación de los grupos</h2>
+    <p class="hint">Pulsa los equipos en orden: 1º, luego 2º y luego 3º. El 4º es el que queda. Vuelve a pulsar un equipo ya clasificado para borrarlo a él y a todos los de debajo.</p>
     <div id="groups" class="groups-grid"></div>
   </section>
 
   <!-- Step 2: best thirds -->
   <section id="thirds-section">
-    <h2>2. Best third-placed teams <span id="thirds-counter" class="counter"></span></h2>
-    <p class="hint">Eight of the twelve third-placed teams advance. Tick the eight you think make it.</p>
+    <h2>2. Mejores terceros <span id="thirds-counter" class="counter"></span></h2>
+    <p class="hint">Ocho de los doce terceros pasan de ronda. Marca los ocho que crees que se clasifican.</p>
     <div id="thirds" class="thirds-grid"></div>
   </section>
 
   <!-- Step 3: knockout bracket -->
   <section id="bracket-section">
-    <h2>3. Knockout bracket</h2>
-    <p class="hint">Click the team you think wins each tie. Changing an earlier pick clears the ones that depended on it.</p>
+    <h2>3. Cuadro eliminatorio</h2>
+    <p class="hint">Pulsa el equipo que crees que gana cada cruce. Cambiar un pronóstico anterior borra los que dependían de él.</p>
     <div id="champion-banner" hidden></div>
     <div id="bracket" class="bracket"></div>
   </section>
 
   <!-- Compare results -->
   <section id="compare-section" hidden>
-    <h2>You vs your friend</h2>
+    <h2>Tú contra tu amigo</h2>
     <div id="compare-output"></div>
   </section>
 
