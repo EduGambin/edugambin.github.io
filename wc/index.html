@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup 2026 — Prediction Pool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>World Cup 2026 — Prediction Pool</h1>
+    <p class="tagline">Pick the group standings, then the knockout face-offs, all the way to the champion.</p>
+  </header>
+
+  <!-- Share / compare bar -->
+  <section id="share-bar">
+    <div class="share-actions">
+      <button id="copy-link">Copy link</button>
+      <button id="copy-code">Copy code</button>
+      <button id="reset-all" class="danger">Reset all</button>
+    </div>
+    <div class="compare-actions">
+      <input id="friend-code" type="text" placeholder="Paste a friend's code to compare…" autocomplete="off">
+      <button id="compare-btn">Compare</button>
+      <button id="clear-compare" hidden>Clear compare</button>
+    </div>
+    <p id="share-status" class="status" aria-live="polite"></p>
+  </section>
+
+  <!-- Step 1: group standings -->
+  <section id="groups-section">
+    <h2>1. Group standings</h2>
+    <p class="hint">Click teams in order: 1st, then 2nd, then 3rd. The 4th is whoever's left. Click a ranked team again to clear it and everything below it.</p>
+    <div id="groups" class="groups-grid"></div>
+  </section>
+
+  <!-- Step 2: best thirds -->
+  <section id="thirds-section">
+    <h2>2. Best third-placed teams <span id="thirds-counter" class="counter"></span></h2>
+    <p class="hint">Eight of the twelve third-placed teams advance. Tick the eight you think make it.</p>
+    <div id="thirds" class="thirds-grid"></div>
+  </section>
+
+  <!-- Step 3: knockout bracket -->
+  <section id="bracket-section">
+    <h2>3. Knockout bracket</h2>
+    <p class="hint">Click the team you think wins each tie. Changing an earlier pick clears the ones that depended on it.</p>
+    <div id="champion-banner" hidden></div>
+    <div id="bracket" class="bracket"></div>
+  </section>
+
+  <!-- Compare results -->
+  <section id="compare-section" hidden>
+    <h2>You vs your friend</h2>
+    <div id="compare-output"></div>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
